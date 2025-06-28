@@ -15,4 +15,5 @@ jobs:
           node-version: "22.x"
       - run: npm publish
         env:
+          registry-url: "https://registry.npmjs.org"
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
